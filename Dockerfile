@@ -32,4 +32,4 @@ ENV PATH ${APP_DIR}/venv/bin:$PATH
 WORKDIR ${APP_DIR}/
 COPY . ./
 
-CMD ["python", "app.py"]
+CMD ["python", "flaskapp.py"]
