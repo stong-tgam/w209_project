@@ -5,15 +5,15 @@ app = Flask(__name__)
 def homepage():
     file="about9.jpg"
     return render_template("homepage.html",file=file)
-@app.route("/content1")
+@app.route("/where_to_invest")
 def content1():
     file="about9.jpg"
     return render_template("content1.html",file=file)
-@app.route("/content2")
+@app.route("/where_to_start_business")
 def content2():
     file="about9.jpg"
     return render_template("content2.html",file=file)
-@app.route("/content3")
+@app.route("/covid_impact")
 def content3():
     file="about9.jpg"
     return render_template("content3.html",file=file)
