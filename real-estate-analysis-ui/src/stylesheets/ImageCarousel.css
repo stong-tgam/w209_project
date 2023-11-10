@@ -1,0 +1,10 @@
+.carousel-content {
+    margin-bottom: 50px;
+}
+
+.carousel-image {
+    max-width: 1000px;
+    min-width: 1000px;
+    max-height: 500px;
+    min-height: 500px;
+}

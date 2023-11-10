@@ -1,0 +1,97 @@
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Nunito', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --pink: #D7AAAD;
+  --opacity-pink: #d7aaada9;
+  --dark-navy: #061824;
+  --opacity-dark-navy: #3399ff;
+  --off-white: #F7FAFE;
+  --light-gray: #d1d3d6;
+
+}
+
+body {
+  font-family: 'Nunito', Arial, sans-serif;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-size: auto 100%;
+  color: var(--dark-navy);
+}
+
+/* Footer section css */
+.myFooter {
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  margin-top: 2%;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: var(--opacity-dark-navy);
+  color: var(--off-white);
+}
+
+.footerLink {
+  padding: 4%;
+  color: var(--off-white);
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: var(--pink);
+}
+
+/* Main menu section css */
+.mainMenu {
+  background-color: var(--opacity-dark-navy);
+  height: 80px;
+}
+
+.myName {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--dark-navy);
+}
+
+.menu {
+  margin-top: 2%;
+  padding-left: 5%;
+  width: 7em;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--dark-navy);
+}
+
+.menu:hover {
+  color: var(--blue);
+}
+
+
+#navigation a.active {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+iframe {
+  width: 100%; /* takes precedence over the width set with the HTML width attribute */
+}
+
+.accordion-button {
+  color: black;
+  background-color: #6495ED;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.imageLogo {
+  max-width: 350px;
+  max-height: 30px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
