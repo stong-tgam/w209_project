@@ -6,11 +6,12 @@ function ImageCarousel() {
     const [imageCashSrc, setImageCashSrc] = useState('');
     const [imageOpenSrc, setImageOpenSrc] = useState('');
     const [imageCovidSrc, setImageCovidSrc] = useState('');
+    const local_url = 'http://127.0.0.1:3000'
 
     useEffect(() => {
     const getCashImage = async () => {
         try {
-        const response = await fetch(`http://127.0.0.1:3000/get_image/cash.png`);
+        const response = await fetch(`https://apps-fall.ischool.berkeley.edu/RealEstateAnalyzers/get_image/cash.png`);
         const blob = await response.blob();
         const url = URL.createObjectURL(blob);
         setImageCashSrc(url);
@@ -20,7 +21,7 @@ function ImageCarousel() {
     };
     const getOpenImage = async () => {
         try {
-        const response = await fetch(`http://127.0.0.1:3000/get_image/open.jpg`);
+        const response = await fetch(`https://apps-fall.ischool.berkeley.edu/RealEstateAnalyzers/get_image/open.jpg`);
         const blob = await response.blob();
         const url = URL.createObjectURL(blob);
         setImageOpenSrc(url);
@@ -30,7 +31,7 @@ function ImageCarousel() {
     };
     const getCovidImage = async () => {
         try {
-        const response = await fetch(`http://127.0.0.1:3000/get_image/covid.jpg`);
+        const response = await fetch(`https://apps-fall.ischool.berkeley.edu/RealEstateAnalyzers/get_image/covid.jpg`);
         const blob = await response.blob();
         const url = URL.createObjectURL(blob);
         setImageCovidSrc(url);
