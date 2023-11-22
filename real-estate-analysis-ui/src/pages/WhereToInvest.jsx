@@ -1,5 +1,6 @@
 import '../stylesheets/WhereToInvest.css'
 import WhereToInvestTableau from '../tableau/WhereToInvestTableau'
+import WhereToInvestTableauB from '../tableau/WhereToInvestTableauB'
 
 export default function Resources() {
     return (
@@ -12,6 +13,8 @@ export default function Resources() {
           </div>
         </div>
         <WhereToInvestTableau />
+        <WhereToInvestTableauB />
+        <div className='bottom-space'></div>
       </div>
     );
   }

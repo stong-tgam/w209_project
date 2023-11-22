@@ -1,5 +1,6 @@
 import '../stylesheets/WhereToStartBusiness.css'
 import WhereToStartBusinessTableau from '../tableau/WhereToStartBusinessTableau'
+import WhereToStartBusinessTableauB from '../tableau/WhereToStartBusinessTableauB'
 
 export default function Resources() {
     return (
@@ -11,6 +12,8 @@ export default function Resources() {
           </div>
         </div>
         <WhereToStartBusinessTableau />
+        <WhereToStartBusinessTableauB />
+        <div className='bottom-space'></div>
       </div>
     );
   }

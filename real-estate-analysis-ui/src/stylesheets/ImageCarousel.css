@@ -3,8 +3,8 @@
 }
 
 .carousel-image {
-    max-width: 1000px;
-    min-width: 1000px;
+    max-width: 100%;
+    min-width: 100%;
     max-height: 500px;
     min-height: 500px;
 }
