@@ -7,11 +7,12 @@ function ImageCarousel() {
     const [imageOpenSrc, setImageOpenSrc] = useState('');
     const [imageCovidSrc, setImageCovidSrc] = useState('');
     const local_url = 'http://127.0.0.1:3000'
+    const school_url = 'https://apps-fall.ischool.berkeley.edu/RealEstateAnalyzers'
 
     useEffect(() => {
     const getCashImage = async () => {
         try {
-        const response = await fetch(`https://apps-fall.ischool.berkeley.edu/RealEstateAnalyzers/get_image/cash.png`);
+        const response = await fetch(`${local_url}/get_image/where-to-invest.png`);
         const blob = await response.blob();
         const url = URL.createObjectURL(blob);
         setImageCashSrc(url);
@@ -21,7 +22,7 @@ function ImageCarousel() {
     };
     const getOpenImage = async () => {
         try {
-        const response = await fetch(`https://apps-fall.ischool.berkeley.edu/RealEstateAnalyzers/get_image/open.jpg`);
+        const response = await fetch(`${local_url}/get_image/open.jpg`);
         const blob = await response.blob();
         const url = URL.createObjectURL(blob);
         setImageOpenSrc(url);
@@ -31,7 +32,7 @@ function ImageCarousel() {
     };
     const getCovidImage = async () => {
         try {
-        const response = await fetch(`https://apps-fall.ischool.berkeley.edu/RealEstateAnalyzers/get_image/covid.jpg`);
+        const response = await fetch(`${local_url}/get_image/year-to-year.jpg`);
         const blob = await response.blob();
         const url = URL.createObjectURL(blob);
         setImageCovidSrc(url);
@@ -63,7 +64,7 @@ function ImageCarousel() {
         <Carousel.Item>
             <img className='carousel-image' src={imageCovidSrc} alt="Covid"/>
             <Carousel.Caption>
-            <h3>Covid Impact</h3>
+            <h3>Year To Year Overview</h3>
             </Carousel.Caption>
         </Carousel.Item>
         </Carousel>

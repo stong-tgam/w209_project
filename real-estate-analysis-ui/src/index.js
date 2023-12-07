@@ -10,6 +10,7 @@ import WhereToInvest from './pages/WhereToInvest'
 import WhereToStartBusiness from './pages/WhereToStartBusiness'
 import CovidImpact from './pages/CovidImpact'
 import Dataset from './pages/Dataset'
+import About from './pages/About'
 import Error from './pages/Error'
 import reportWebVitals from './reportWebVitals';
 
@@ -32,12 +33,12 @@ const router = createHashRouter([
         element: <WhereToStartBusiness />,
       },
       {
-        path: '/covid_impact',
+        path: '/year_to_year',
         element: <CovidImpact />,
       },
       {
-        path: '/dataset',
-        element: <Dataset />,
+        path: '/about',
+        element: <About />,
       },
     ],
   },

@@ -1,0 +1,15 @@
+.bottom-space {
+    height: 100px;
+}
+
+.description-background {
+    background-color: #deecfb6a;
+    color: #232323;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.description-text {
+    font-size: 18px;
+}
