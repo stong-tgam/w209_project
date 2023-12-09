@@ -1,36 +1,49 @@
 import '../stylesheets/WhereToInvest.css'
 import WhereToInvestTableau from '../tableau/WhereToInvestTableau'
 import WhereToInvestTableauB from '../tableau/WhereToInvestTableauB'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 
 export default function Resources() {
     return (
-      <div className="container pt-4">
-        <div className="section">
-          <div class="text">
-            <h2>Price per Square Meter and Rent Change Over Years</h2>
-            <p>Affordable Market: Low-cost living and buying, ideal for budget-focused buyers or investors.</p>
-            <p>Investor's Market: High property prices with lower rents, indicating potential for future value growth.</p>
-            <p>Renter's Market: High rents with more affordable purchase prices, attractive for rental income investors.</p>
-            <p>Premium Market: High rents and purchase prices, indicating a luxury, high-demand urban real estate sector.</p>
-            <p>Insight:</p>
-            <p>Hong Kong stands out with top-tier rents and property prices, hinting at a volatile market.
-                New York and Los Angeles show high rents but more moderate buying costs.
-                In contrast, Shanghai, Paris, Berlin, and Toronto present more balanced and lower real estate costs.
-            </p>
+      <Container>
+        <br/>
+        <h2>Where to Invest</h2>
+        <div className='chart-descriptions'><b>Insight:</b></div>
+        <p>Hong Kong stands out with top-tier rents and property prices, hinting at a volatile market.
+            New York and Los Angeles show high rents but more moderate buying costs.
+            In contrast, Shanghai, Paris, Berlin, and Toronto present more balanced and lower real estate costs.
+        </p>
+        <Row>
+          <Col className='chart-descriptions-variables'>
+            <div className="section">
+              <div className="variables-text">
+                <div className='chart-descriptions'><b>Affordable Market:</b> Low-cost living and buying, ideal for budget-focused buyers or investors.</div>
+                <div className='chart-descriptions'><b>Investor's Market:</b> High property prices with lower rents, indicating potential for future value growth.</div>
+                <div className='chart-descriptions'><b>Renter's Market:</b> High rents with more affordable purchase prices, attractive for rental income investors.</div>
+                <div className='chart-descriptions'><b>Premium Market:</b> High rents and purchase prices, indicating a luxury, high-demand urban real estate sector.</div>
+              </div>
+            </div>
+        </Col>
+        <Col><WhereToInvestTableau /></Col>
+        </Row>
+          <br /><br /><br />
+          <p><b>Global Rent Yields:</b> There's a clear visual differentiation in rent yields between cities, Nigeria Lagos is the highest.</p>
+          <p><b>Trend Over Time:</b> The rent yield graphs show a general decline in both countryside and downtown rent yields over the years, while countryside rent yields fluctuate but remain higher.</p>
+          <p><b>Commuting Trends:</b> Commute times peaked around 2015 and have since improved, suggesting better transportation or changes in work habits.</p>
+        <Row>
+          <Col className='chart-descriptions-variables'>
+          <div className="section">
+            <div className="variables-text">
+              <div className='chart-descriptions'><b>Rental Yield:</b> is the total yearly gross rent divided by the house price (expressed in percentages). Higher is better.</div>
+            </div>
           </div>
-        </div>
-        <WhereToInvestTableau />
-        <div className="section">
-          <div class="text">
-            <h2>Section #2</h2>
-            <p>Global Rent Yields: There's a clear visual differentiation in rent yields between cities, Nigeria Lagos is the highest.</p>
-            <p>Trend Over Time: The rent yield graphs show a general decline in both countryside and downtown rent yields over the years, while countryside rent yields fluctuate but remain higher.</p>
-            <p> Commuting Trends: Commute times peaked around 2015 and have since improved, suggesting better transportation or changes in work habits.</p>
-          </div>
-        </div>
-        <WhereToInvestTableauB />
+          </Col>
+          <Col><WhereToInvestTableauB /></Col>
+        </Row>
         <div className='bottom-space'></div>
-      </div>
+      </Container>
     );
   }
 
