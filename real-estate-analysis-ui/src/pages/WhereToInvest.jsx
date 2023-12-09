@@ -29,9 +29,10 @@ export default function Resources() {
         <Col><WhereToInvestTableau /></Col>
         </Row>
           <br /><br /><br />
-          <p><b>Global Rent Yields:</b> There's a clear visual differentiation in rent yields between cities, Nigeria Lagos is the highest.</p>
-          <p><b>Trend Over Time:</b> The rent yield graphs show a general decline in both countryside and downtown rent yields over the years, while countryside rent yields fluctuate but remain higher.</p>
-          <p><b>Commuting Trends:</b> Commute times peaked around 2015 and have since improved, suggesting better transportation or changes in work habits.</p>
+          <div className='chart-descriptions'><b>Insight:</b></div>
+          <div className='chart-descriptions'><b>Global Rent Yields:</b> There's a clear visual differentiation in rent yields between cities, Nigeria Lagos is the highest.</div>
+          <div className='chart-descriptions'><b>Trend Over Time:</b> Rent yield graphs indicate a general decrease over time in both countryside and downtown areas, with countryside yields fluctuating but staying higher.</div>
+          <div className='chart-descriptions'><b>Commuting Trends:</b> Commute times peaked around 2015 and have since improved, suggesting better transportation or changes in work habits.</div>
         <Row>
           <Col className='chart-descriptions-variables'>
           <div className="section">

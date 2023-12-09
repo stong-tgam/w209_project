@@ -9,13 +9,12 @@ export default function Resources() {
   return (
     <Container>
       <br/>
-      <h2>Where to Invest</h2>
+      <h2>Where to Start a Business</h2>
       <div className='chart-descriptions'><b>Insight:</b></div>
-      <p>Affordability(House Price to Household Anual Income) Gradient: The map's color coding suggests varying levels of affordability across regions, with red shades indicating less affordability and with green shade indicating higher affordability.</p> 
-      <p> ex. China appears less affordable compared to many other regions.</p>
-      
-      <p>Living Cost vs. Purchasing Power: In Canada, cities like Ottawa and Toronto have a higher cost of living relative to their purchasing power, while Edmonton seems to have a balance between the two.</p>
-      <p>ex. Edmonton has the lowest ratio of House Price to Household Anual Income in Canada, implying lower cost barriers for living and doing business.</p>
+      <div className='chart-descriptions'>Affordability(House Price to Household Anual Income) Gradient: The map's color coding suggests varying levels of affordability across regions, with red shades indicating less affordability and with green shade indicating higher affordability.</div> 
+      <div className='chart-descriptions'><b>For example:</b> China appears less affordable compared to many other regions.</div>
+      <div className='chart-descriptions'>Living Cost vs. Purchasing Power: In Canada, cities like Ottawa and Toronto have a higher cost of living relative to their purchasing power, while Edmonton seems to have a balance between the two.</div>
+      <div className='chart-descriptions'><b>For example:</b> Edmonton has the lowest ratio of House Price to Household Anual Income in Canada, implying lower cost barriers for living and doing business.</div>
 
       <Row>
         <Col className='chart-descriptions-variables'>
@@ -34,13 +33,19 @@ export default function Resources() {
       </Col>
       <Col> <WhereToStartBusinessTableau /></Col>
       </Row>
-        <br /><br /><br />
-        <div className='chart-descriptions'><b>Insight:</b></div>
-        <p><b>Safety Index Gradient:</b> The map's color coding suggests varying levels of safety index across regions, with red shades indicating less safety and with green shade indicating higher safety.</p>
-        <p><b>Safety Index over time:</b> To visualize the safety trend of a city changes over the years. </p>
-        <p> ex. The chart suggests that Edmonton's safety index has been decreasing over time, which might raise concerns about public safety and could potentially impact investment decisions in the area.</p>
       <Row>
-        
+      <br /><br /><br />
+        <div className='chart-descriptions'><b>Insight:</b></div>
+        <div className='chart-descriptions'><b>Safety Index Gradient:</b> The map uses color coding to indicate safety levels: red for less safe areas and green for safer ones.</div>
+        <div className='chart-descriptions'><b>Safety Index over time:</b> To visualize the safety trend of a city changes over the years. </div>
+        <div className='chart-descriptions'><b>For example:</b>The chart shows a declining safety index in Edmonton, potentially affecting public safety and investment decisions.</div>
+      <Col className='chart-descriptions-variables'>
+          <div className="section">
+            <div className="variables-text">
+            <div className='chart-descriptions'><b>Safety:</b> General perception. Based on user-contributed data and perceptions, which may differ from official government statistics. The index serves as a comparative tool to assess the relative safety of different cities or countries, helping individuals make informed decisions and understand the crime landscape in specific locations.</div>
+            </div>
+          </div>
+      </Col>
         <Col><WhereToStartBusinessTableauB /></Col>
       </Row>
       <div className='bottom-space'></div>
@@ -49,4 +54,4 @@ export default function Resources() {
 }
 
  
-        
+ 

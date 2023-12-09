@@ -10,18 +10,18 @@ export default function Resources() {
           <h4><i>Learn where to buy a home or start your business</i></h4>
           <br />
           <p className='description-text'>
-            This comprehensive tool is for users to explore the real estate market along multiple parameters of the cities of interest, to assist them in making the choice of buying or starting their business.
+          This tool helps users easily explore the real estate market in different cities. It provides detailed information on various aspects to aid in making informed decisions about purchasing property or starting a business.
           </p>
         </div>
         <div className='text-left'>
             <p>
-            <b>WHERE TO BUY</b> Users can visualize the rental and unit prices within the cities. We can also compare the downtown city prices and outside city prices. Users will be able to persuade their decion with extra data features such as traffic conditions.
+            <b>Where to Buy</b> Users can see and compare rental and property prices both in downtown and in countryside. The tool also offers additional data like traffic conditions to help users make better decisions.
             </p>
             <p>
-            <b>WHERE TO START A BUSINESS</b> Users can explore the affordability by the map and pick the interested country for more details in that country's cities. With the safety index feature, users can be more confident about the decision of the location they want to start their business.
+            <b>Where to Start a Business</b> Users can use a map to check the price-to-income ratio in different countries and select a country to get more details about its cities. The safety index feature helps users feel more confident about choosing a location to start their business.
             </p>
             <p>
-            <b>YEAY-TO-YEAR OVERVIEW</b> Users can find universal tools that assist exploring the parameters in the real estate market including the affordability, rental prices and other indexes that are strongly correlated to living qualities such as pollution, health care, safety and transit to have a whole picture of the location in year to year comparison.
+            <b>Year-to-Year Overview</b> Users can find universal tools that assist exploring the parameters in the real estate market including the affordability, rental prices and other indexes that are strongly correlated to living qualities such as pollution, health care, safety and transit to have a whole picture of the location in year to year comparison.
             </p>
         </div>
         <div className='bottom-space'></div>
