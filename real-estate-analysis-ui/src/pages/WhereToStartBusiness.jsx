@@ -8,7 +8,7 @@ export default function Resources() {
         <div className="section">
           <div class="text">
             <h2>Where to start your business?</h2>
-            <p>Exploration tool</p>
+            <p>Exploration tool_test</p>
           </div>
         </div>
         <WhereToStartBusinessTableau />
