@@ -12,7 +12,7 @@ function ImageCarousel() {
     useEffect(() => {
     const getCashImage = async () => {
         try {
-        const response = await fetch(`${local_url}/get_image/where-to-invest.png`);
+        const response = await fetch(`${school_url}/get_image/where-to-invest.png`);
         const blob = await response.blob();
         const url = URL.createObjectURL(blob);
         setImageCashSrc(url);
@@ -22,7 +22,7 @@ function ImageCarousel() {
     };
     const getOpenImage = async () => {
         try {
-        const response = await fetch(`${local_url}/get_image/open.jpg`);
+        const response = await fetch(`${school_url}/get_image/open.jpg`);
         const blob = await response.blob();
         const url = URL.createObjectURL(blob);
         setImageOpenSrc(url);
@@ -32,7 +32,7 @@ function ImageCarousel() {
     };
     const getCovidImage = async () => {
         try {
-        const response = await fetch(`${local_url}/get_image/year-to-year.jpg`);
+        const response = await fetch(`${school_url}/get_image/year-to-year.jpg`);
         const blob = await response.blob();
         const url = URL.createObjectURL(blob);
         setImageCovidSrc(url);

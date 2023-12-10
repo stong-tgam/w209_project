@@ -15,7 +15,7 @@ export default function About() {
     useEffect(() => {
         const getStevenImage = async () => {
             try {
-            const response = await fetch(`${local_url}/get_image/StevenTong.png`);
+            const response = await fetch(`${school_url}/get_image/StevenTong.png`);
             const blob = await response.blob();
             const url = URL.createObjectURL(blob);
             setImageStevenSrc(url);
@@ -25,7 +25,7 @@ export default function About() {
         };
         const getYenchengImage = async () => {
             try {
-            const response = await fetch(`${local_url}/get_image/YenchengChen.png`);
+            const response = await fetch(`${school_url}/get_image/YenchengChen.png`);
             const blob = await response.blob();
             const url = URL.createObjectURL(blob);
             setImageYenchengSrc(url);
@@ -35,7 +35,7 @@ export default function About() {
         };
         const getPaulImage = async () => {
             try {
-            const response = await fetch(`${local_url}/get_image/PaulArellano.jpg`);
+            const response = await fetch(`${school_url}/get_image/PaulArellano.jpg`);
             const blob = await response.blob();
             const url = URL.createObjectURL(blob);
             setImagePaulSrc(url);
