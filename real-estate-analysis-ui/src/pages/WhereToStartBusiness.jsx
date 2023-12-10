@@ -34,8 +34,7 @@ export default function Resources() {
       <Col> <WhereToStartBusinessTableau /></Col>
       </Row>
       <Row>
-      <br /><br /><br />
-        <div className='chart-descriptions'><b>Insight:</b></div>
+        <div className='insight-space'><b>Insight:</b></div>
         <div className='chart-descriptions'><b>Safety Index Gradient:</b> The map uses color coding to indicate safety levels: red for less safe areas and green for safer ones.</div>
         <div className='chart-descriptions'><b>Safety Index over time:</b> To visualize the safety trend of a city changes over the years. </div>
         <div className='chart-descriptions'><b>For example:</b>The chart shows a declining safety index in Edmonton, potentially affecting public safety and investment decisions.</div>

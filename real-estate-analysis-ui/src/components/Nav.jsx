@@ -27,8 +27,8 @@ export default function MyNav() {
             <NavLink to="/where_to_start_business" className="menu">
               Where to Start Business?
             </NavLink>
-            <NavLink to="/year_to_year" className="menu">
-              Year to Year Overview
+            <NavLink to="/year_over_year" className="menu">
+              Year over Year
             </NavLink>
             <NavLink to="/about" className="menu">
               About

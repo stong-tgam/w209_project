@@ -69,7 +69,7 @@ export default function About() {
         <Accordion.Body>
         <a href='https://www.numbeo.com/cost-of-living/'>Numbeo Dataset</a>
         <p>
-        Numbeo is the world’s largest cost of living database. Numbeo is also a crowd-sourced global database of quality of life data: housing indicators, perceived crime rates, healthcare quality, transport quality, and other statistics.
+          Numbeo provides data for various housing aspects, including housing rent and buy prices, health care index, traffic index among other indexes. 
         </p>
         </Accordion.Body>
       </Accordion.Item>

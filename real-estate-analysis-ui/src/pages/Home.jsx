@@ -4,13 +4,17 @@ import ImageCarousel from '../components/ImageCarousel'
 export default function Resources() {
     return (
       <div className="container pt-4">
-        <ImageCarousel />
         <div className='description-background text-center border'>
           <h1>Real Estate Analyzer</h1>
           <h4><i>Learn where to buy a home or start your business</i></h4>
           <br />
+          <h2>Target Audience:</h2>
           <p className='description-text'>
-          This tool helps users easily explore the real estate market in different cities. It provides detailed information on various aspects to aid in making informed decisions about purchasing property or starting a business.
+            People who want to invest in Real Estate or wants to view the Real Estate market and housing indexes to start a business at a specific location.
+          </p>
+          <h2>Goal:</h2>
+          <p className='description-text'>
+          This tool helps users easily explore the real estate market in different cities. It provides detailed information on various aspects to aid in making informed decisions about purchasing property for or starting a business.
           </p>
         </div>
         <div className='text-left'>
@@ -24,6 +28,7 @@ export default function Resources() {
             <b>Year-to-Year Overview</b> Users can find universal tools that assist exploring the parameters in the real estate market including the affordability, rental prices and other indexes that are strongly correlated to living qualities such as pollution, health care, safety and transit to have a whole picture of the location in year to year comparison.
             </p>
         </div>
+        <ImageCarousel />
         <div className='bottom-space'></div>
       </div>
     );

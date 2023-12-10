@@ -33,7 +33,7 @@ const router = createHashRouter([
         element: <WhereToStartBusiness />,
       },
       {
-        path: '/year_to_year',
+        path: '/year_over_year',
         element: <CovidImpact />,
       },
       {

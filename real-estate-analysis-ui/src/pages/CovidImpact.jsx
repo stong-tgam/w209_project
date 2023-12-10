@@ -7,67 +7,11 @@ import Container from 'react-bootstrap/Container';
 import React, { useState, useEffect } from 'react';
 
 export default function Resources() {
-    const [image2018Src, setImage2018Src] = useState('');
-    const [image2020Src, setImage2020Src] = useState('');
-    const [image2023Src, setImage2023Src] = useState('');
-    const local_url = 'http://127.0.0.1:3000'
-
-    useEffect(() => {
-      const get2018Image = async () => {
-          try {
-          const response = await fetch(`${local_url}/get_image/2018.png`);
-          const blob = await response.blob();
-          const url = URL.createObjectURL(blob);
-          setImage2018Src(url);
-          } catch (error) {
-          console.error('Error fetching image:', error);
-          }
-      };
-      const get2020Image = async () => {
-          try {
-          const response = await fetch(`${local_url}/get_image/2020.png`);
-          const blob = await response.blob();
-          const url = URL.createObjectURL(blob);
-          setImage2020Src(url);
-          } catch (error) {
-          console.error('Error fetching image:', error);
-          }
-      };
-      const get2023Image = async () => {
-          try {
-          const response = await fetch(`${local_url}/get_image/2023.png`);
-          const blob = await response.blob();
-          const url = URL.createObjectURL(blob);
-          setImage2023Src(url);
-          } catch (error) {
-          console.error('Error fetching image:', error);
-          }
-      };
-  
-      get2018Image();
-      get2020Image();
-      get2023Image();
-  
-      }, []);
     return (
       <Container>
         <br/>
-        <h2>Affordability Per Year By City</h2>
+        <h2>Year Over Year</h2>
         <p>Provide detailed insight with loan affordability, price to income, safety indexes among others to compare impact among years for cities in question. Impacts could provide insight to years that impacted the economy such as 2020 Covid Pandemic.</p>
-        <Container>
-          <Row>
-            <Col>
-              <img src={image2018Src} alt="2018" />
-            </Col>
-            <Col>
-              <img src={image2020Src} alt="2020" />
-            </Col>
-            <Col>
-              <img src={image2023Src} alt="2023" />
-            </Col>
-          </Row>
-        </Container>
-        <p>Images show before, during and after Covid Pandemic insights.</p>
         <div className='chart-descriptions'><b>Insight:</b></div>
         <p>
           In the year 2023 we can see that the top major cities provided by the Loan Affordability index are Los Angeles, Toky and Berlin. However, Price to Income and Price to Rent say otherwise, while Los Angeles maintaining its  top ranking. Interestingly, before Covid we had similar results. By the year 2020 when Covid Pandemic hit, Tokyo and Berlin were both most impacted while Los Angeles maintained its position.  

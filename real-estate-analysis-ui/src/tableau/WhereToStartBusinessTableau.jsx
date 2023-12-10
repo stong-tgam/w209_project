@@ -8,6 +8,6 @@ export default function WhereToStartBusinessTableau() {
     ref.current = new window.tableau.Viz(ref.current,url);
   }, [])
   return (
-    <div ref={ref} style={{width:'70%', margin:'auto'}}> </div>
+    <div ref={ref} style={{width:'100%', margin:'auto'}}> </div>
   );
 }
